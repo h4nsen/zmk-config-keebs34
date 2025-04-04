@@ -8,10 +8,10 @@
 
         default_layer {
             bindings = <
-&none   &none   &none   &kp E   &none 
-&none   &none   &none   &none   &none 
-&none   &none   &none   &none   &none 
-                        &none   &none 
+                &none   &none   &none   &kp E   &none 
+                &none   &none   &none   &none   &none 
+                &none   &none   &none   &none   &none 
+                                        &none   &none 
             >;
         };
     };
