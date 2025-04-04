@@ -1,0 +1,6 @@
+if SHIELD_KEEPS34
+
+config ZMK_KEYBOARD_NAME
+    default "keeps34"
+
+endif
