@@ -1,2 +1,2 @@
 config SHIELD_KEEBS34
-    def_bool $(shields_list_contains, keebs34)
+    def_bool $(shields_list_contains,keebs34)
