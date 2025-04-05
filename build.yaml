@@ -21,7 +21,5 @@
 include:
   - board: nice_nano_v2
     shield: keebs34
-  - board: nice_nano_v2
-    shield: settings_reset
 
-    
+
