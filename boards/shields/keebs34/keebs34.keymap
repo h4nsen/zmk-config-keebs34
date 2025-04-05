@@ -11,7 +11,7 @@
             bindings = <
                 &kp Q  &kp W  &kp E  &kp R  &kp T
                 &kp A  &kp S  &kp D  &kp F  &kp G
-                &kp Z  &kp X  &kp C  &ep EP_TOG  &kp B
+                &kp Z  &kp X  &kp C  &ext_power EP_TOG  &kp B
                                      &kp O  &kp P
             >;
         };
