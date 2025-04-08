@@ -8,7 +8,7 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            display_name = "BASE"
+            display_name = "BASE";
             bindings = <
                 &kp Q  &kp W  &kp E  &kp R  &kp T
                 &kp A  &kp S  &kp D  &kp F  &kp G
@@ -18,32 +18,32 @@
         };
 
         upper_layer {
-            display_name = "UPPER"
+            display_name = "UPPER";
             status = "reserved";
         };
 
         lower_layer {
-            display_name = "LOWER"
+            display_name = "LOWER";
             status = "reserved";
         };
 
         symbol_layer {
-            display_name = "SYMBOL"
+            display_name = "SYMBOL";
             status = "reserved";
         };
 
         control_layer {
-            display_name = "CONTROL"
+            display_name = "CONTROL";
             status = "reserved";
         };
 
         extra1_layer {
-            display_name = "EXTRA1"
+            display_name = "EXTRA1";
             status = "reserved";
         };
 
         extra2_layer {
-            display_name = "EXTRA2"
+            display_name = "EXTRA2";
             status = "reserved";
         };
     };
