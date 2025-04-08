@@ -1,5 +1,5 @@
 #include <dt-bindings/zmk/matrix_transform.h>
-#include <keebs34-layouts.dtsi>
+#include <keebs34/keebs34-layouts.dtsi>
 
 / {
     chosen {
