@@ -5,7 +5,7 @@ on:
   push:               # automatically run on changes to following paths
     paths:
       - "boards/shields/keebs34/*.keymap"
-      - "boards/shields/keebs34/*.dtsi"
+      - "boards/shields/keebs34/*.overlay"
       - "keymap_drawer.config.yaml"
       # - 'boards/*/*/*.keymap'
 
