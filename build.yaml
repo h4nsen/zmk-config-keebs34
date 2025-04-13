@@ -23,5 +23,5 @@ include:
     shield: keebs34_left nice_view
     artifact-name: keebs34_left
   - board: nice_nano_v2
-    shield: keebs34_right 
-    artifact-name: keebs34_right nice_view
+    shield: keebs34_right nice_view
+    artifact-name: keebs34_right 
