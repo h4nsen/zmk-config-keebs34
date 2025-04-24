@@ -8,10 +8,10 @@
         default_layer {
             display-name = "BASE";
             bindings = <
-&kp Q  &kp W  &kp E  &kp R  &kp T    &kp Y      &kp U      &kp I      &kp O    &kp P
-&kp A  &kp S  &kp D  &kp F  &kp G    &kp H      &kp J      &kp K      &kp L    &kp NUMBER_4
-&kp Z  &kp X  &kp C  &kp V  &kp B    &kp N      &kp M      &kp COMMA  &kp DOT  &kp ENTER
-                     &none  &mo 1    &kp SPACE  &kp ENTER
+&kp SPACE  &kp SPACE  &kp SPACE  &kp SPACE  &kp SPACE    &kp SPACE  &kp SPACE  &kp SPACE  &kp SPACE  &kp SPACE
+&kp A      &kp R      &kp S      &kp T      &kp G        &kp M      &kp N      &kp E      &kp I      &kp O
+&kp SPACE  &kp SPACE  &kp SPACE  &kp SPACE  &kp SPACE    &kp SPACE  &kp SPACE  &kp SPACE  &kp SPACE  &kp SPACE
+                                 &mo 3      &mo 1        &kp SPACE  &mo 2
             >;
         };
 
@@ -21,17 +21,17 @@
 &kp ESC    &none             &none         &none         &none            &kp PAGE_UP         &kp HOME      &kp UP    &kp END        &kp INSERT
 &kp TAB    &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &kp BACKSPACE    &kp PG_DN           &kp LEFT      &kp DOWN  &kp RIGHT      &none
 &kp LC(Z)  &kp LC(X)         &kp LC(C)     &kp LC(V)     &kp DEL          &kp K_CONTEXT_MENU  &kp LC(LEFT)  &none     &kp LC(RIGHT)  &none
-                                           &mo 2         &trans           &kp BACKSPACE       &none
+                                           &none         &trans           &kp BACKSPACE       &none
             >;
         };
 
         lower_layer {
             display-name = "LOWER";
             bindings = <
-&none  &none  &none  &none   &none    &none  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none  &none
-&none  &none  &none  &none   &none    &none  &kp LEFT_BRACE        &kp RIGHT_BRACE        &none  &none
-&none  &none  &none  &none   &none    &none  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none  &none
-                     &trans  &mo 3    &none  &none
+&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH  &kp PERCENT  &kp AMPERSAND    &kp LESS_THAN     &kp LEFT_PARENTHESIS  &kp EQUAL      &kp RIGHT_PARENTHESIS  &kp GREATER_THAN
+&kp SLASH        &kp PIPE           &kp PLUS  &kp MINUS    &kp QUESTION     &kp LEFT_BRACKET  &kp LEFT_BRACE        &kp COLON      &kp RIGHT_BRACE        &kp RIGHT_BRACKET
+&kp BACKSLASH    &none              &none     &none        &none            &kp PIPE          &kp AMPERSAND         &kp SEMICOLON  &none                  &kp UNDERSCORE
+                                              &trans       &mo 3            &none             &none
             >;
         };
 
