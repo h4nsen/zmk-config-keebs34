@@ -112,7 +112,7 @@
         };
 
         mod_right {
-            display-name = "MOD_R"
+            display-name = "MOD_R";
             bindings = <
 &trans  &trans  &trans  &trans  &trans    &trans  &trans           &trans         &trans         &trans
 &trans  &trans  &trans  &trans  &trans    &trans  &kp RIGHT_SHIFT  &kp RIGHT_GUI  &kp RIGHT_ALT  &kp RIGHT_CONTROL
