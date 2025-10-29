@@ -17,15 +17,24 @@
         td_left: td_left {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <1000>;
+            tapping-term-ms = <400>;
             bindings = <&mo NAV>, <&mo MOD_L>;
         };
 
         td_right: td_right {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <1000>;
+            tapping-term-ms = <400>;
             bindings = <&mo SYMBOLS>, <&mo MOD_R>;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        SYMBOL {
+            if-layers = <NAV SYMBOLS>;
+            then-layer = <NUMBERS>;
         };
     };
 
@@ -35,9 +44,9 @@
         base {
             display-name = "BASE";
             bindings = <
-&kp Q  &kp W  &kp F  &kp P           &kp B       &kp J      &kp L      &kp U      &kp Y       &none
-&kp A  &kp R  &kp S  &kp T           &kp G       &kp M      &kp N      &kp E      &kp I       &kp O
-&kp Z  &kp X  &kp C  &kp D           &kp V       &kp K      &kp H      &kp COMMA  &kp PERIOD  &kp ENTER
+&kp Q  &kp W  &kp E  &kp R           &kp T       &kp Y      &kp U      &kp I      &kp O       &P
+&kp A  &kp S  &kp D  &kp F           &kp G       &kp H      &kp J      &kp K      &kp L       &none
+&kp Z  &kp X  &kp C  &kp V           &kp B       &kp N      &kp M      &kp COMMA  &kp PERIOD  &kp ENTER
                      &kp LEFT_SHIFT  &td_left    &kp SPACE  &td_right
             >;
         };
@@ -45,7 +54,7 @@
         navigation {
             display-name = "NAV";
             bindings = <
-&kp ESC           &kp AT        &mo FUNCTION         &none           &none     &kp PAGE_UP    &kp HOME  &kp UP    &kp END    &kp INSERT
+&kp ESC           &kp AT        &none         &none           &none     &kp PAGE_UP    &kp HOME  &kp UP    &kp END    &kp INSERT
 &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &kp LEFT_SHIFT  &none     &kp PG_DN      &kp LEFT  &kp DOWN  &kp RIGHT  &kp DELETE
 &kp TAB           &none         &none         &none           &none     &key_repeat    &none     &none     &none      &none
                                               &trans          &trans    &kp BACKSPACE  &trans
@@ -68,7 +77,7 @@
 &none             &none     &none         &none       &none     &none  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &none
 &kp LEFT_CONTROL  &kp LALT  &kp LEFT_GUI  &kp LSHIFT  &none     &none  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_0
 &none             &none     &none         &none       &none     &none  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none
-                                          &mo 4       &trans    &none  &none
+                                          &mo CONTROL &trans    &none  &none
             >;
         };
 
@@ -103,23 +112,13 @@
         };
 
         mod_right {
+            display-name = "MOD_R"
             bindings = <
 &trans  &trans  &trans  &trans  &trans    &trans  &trans           &trans         &trans         &trans
 &trans  &trans  &trans  &trans  &trans    &trans  &kp RIGHT_SHIFT  &kp RIGHT_GUI  &kp RIGHT_ALT  &kp RIGHT_CONTROL
 &trans  &trans  &trans  &trans  &trans    &trans  &trans           &trans         &trans         &trans
                         &trans  &trans    &trans  &trans
             >;
-
-            label = "MOD_R";
-        };
-    };
-
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        SYMBOL {
-            if-layers = <NAV SYMBOLS>;
-            then-layer = <NUMBERS>;
         };
     };
 };
